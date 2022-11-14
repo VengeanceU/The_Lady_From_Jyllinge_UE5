@@ -1,0 +1,29 @@
+; SPIR-V
+; Version: 1.0
+; Generator: Google spiregg; 0
+; Bound: 6
+; Schema: 0
+               OpCapability Shader
+               OpCapability SampledBuffer
+               OpCapability ImageBuffer
+               OpCapability StorageImageExtendedFormats
+               OpExtension "SPV_GOOGLE_hlsl_functionality1"
+               OpExtension "SPV_GOOGLE_user_type"
+          %1 = OpExtInstImport "GLSL.std.450"
+               OpMemoryModel Logical GLSL450
+               OpEntryPoint Fragment %Main "Main"
+               OpExecutionMode %Main OriginUpperLeft
+
+               ; Debug Information
+               OpSource HLSL 620
+               OpName %Main "Main"  ; id %2
+
+               ; Types, variables and constants
+       %void = OpTypeVoid
+          %4 = OpTypeFunction %void
+
+               ; Function Main
+       %Main = OpFunction %void None %4
+          %5 = OpLabel
+               OpReturn
+               OpFunctionEnd
